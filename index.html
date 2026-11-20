@@ -486,6 +486,7 @@ button{font:inherit;color:inherit}
 /* ------- closing ------- */
 #s-end .logo{position:absolute;left:128px;top:110px;width:200px;height:146px}
 #s-end .t-xl{position:absolute;left:128px;bottom:200px;font-size:190px}
+#s-end .endsub{position:absolute;left:128px;bottom:170px;margin:0;font-weight:700;font-size:64px;line-height:1.05;letter-spacing:-.02em;color:var(--cream)}
 #s-end .thanks{position:absolute;left:128px;bottom:110px;font-size:36px;color:#FBE3EA;margin:0}
 #s-end .ears{position:absolute;right:120px;top:90px;font-weight:700;font-size:300px;line-height:.8;letter-spacing:-.05em;color:#DE3A6C;margin:0}
 
@@ -615,13 +616,13 @@ button{font:inherit;color:inherit}
       <p class="ol">Opción 1</p>
       <div class="crow"><p class="k">En la pared</p><p class="v">Para lo que hay que oír… ¿Quieres descubrirlo?</p></div>
       <div class="crow"><p class="k">Para empezar</p><p class="v">Mira lo que hay que oír. [Empezar]</p></div>
-      <div class="crow"><p class="k">Cierre</p><p class="v">Sí que pasa. Si oyes mal, no esperes.<br>Revisa tu audición.</p></div>
+      <div class="crow"><p class="k">Cierre</p><p class="v">Sí que pasa.<br>Si oyes mal, no esperes.<br>Revisa tu audición.</p></div>
     </div>
     <div class="opt rise" style="animation-delay:.45s">
       <p class="ol">Opción 2</p>
       <div class="crow"><p class="k">En la pared</p><p class="v">Oye, ¿tú cómo lo ves?</p></div>
       <div class="crow"><p class="k">Para empezar</p><p class="v">¿Oyes mal? ¿Quieres verlo? [Sí, quiero]</p></div>
-      <div class="crow"><p class="k">Cierre</p><p class="v">Sí que pasa. Si oyes mal, no pases.<br>Revisa tu audición.</p></div>
+      <div class="crow"><p class="k">Cierre</p><p class="v">Sí que pasa.<br>Si oyes mal, no pases.<br>Revisa tu audición.</p></div>
     </div>
   </div>
 </section>
@@ -667,7 +668,7 @@ button{font:inherit;color:inherit}
   <div class="scenes">
     <div class="scn rise" style="animation-delay:.2s"><div class="im"><img src="assets/v-mesa-larga.jpg" alt="La mesa se alarga y los amigos quedan lejos"><span class="pt">En la propuesta</span></div><h3>La sobremesa</h3><p class="small">La mesa se alarga y los amigos quedan al fondo, lejos de la conversación.</p></div>
     <div class="scn rise" style="animation-delay:.3s"><div class="im"><img src="assets/v-orq-burbujas.jpg" alt="La orquesta envuelta en plástico de burbujas"><span class="pt">En la propuesta</span></div><h3>El concierto</h3><p class="small">Desde la butaca, la orquesta llega envuelta en plástico de burbujas.</p></div>
-    <div class="scn rise" style="animation-delay:.4s"><div class="im"><img src="assets/v-consulta.jpg" alt="La médica habla desde dentro de un acuario"><span class="pt x">Para explorar</span></div><h3>La consulta</h3><p class="small">La médica explica los resultados… desde dentro de un acuario.</p></div>
+    <div class="scn rise" style="animation-delay:.4s"><div class="im"><img src="assets/v-consulta.jpg" alt="La doctora habla desde dentro de un acuario"><span class="pt x">Para explorar</span></div><h3>La consulta</h3><p class="small">La doctora explica los resultados… desde dentro de un acuario.</p></div>
     <div class="scn rise" style="animation-delay:.5s"><div class="im"><img src="assets/v-llamada.jpg" alt="Una abuela escucha por un teléfono de latas"><span class="pt x">Para explorar</span></div><h3>La llamada</h3><p class="small">Hablas con tu nieta por teléfono… y la línea es un teléfono de latas.</p></div>
   </div>
 </section>
@@ -706,7 +707,7 @@ button{font:inherit;color:inherit}
   <div class="proto">
     <div class="phone"><div class="pscr" id="pscr">
       <div class="pprog"><i id="pprog"></i></div>
-      <div class="pv cur" data-v="0"><p class="pk">Día Mundial de la Audición</p><p class="q" style="font-size:46px">¿Cuánto esperarías tú?</p><p class="small">Un minuto para reconocer las señales de la pérdida auditiva.</p><p class="blurq">No esperes</p><div class="pb"><button class="pbtn" data-next>Empezar</button></div></div>
+      <div class="pv cur" data-v="0"><p class="pk">Día Mundial de la Audición</p><p class="q" style="font-size:52px">Oye, no esperes.</p><p class="small">Un minuto para reconocer las señales de la pérdida auditiva.</p><div class="pb"><button class="pbtn" data-next>Empezar</button></div></div>
       <div class="pv" data-v="1"><p class="pk">Adivina el dato</p><p class="q">Desde que alguien nota que oye peor, ¿cuánto crees que tarda en revisarse?</p><p class="val"><span id="gv">1 año</span></p><input type="range" id="rg" min="0" max="8" value="1" aria-label="Años que crees que se tarda"><div class="scale"><p>Nada</p><p>8 años o más</p></div><div class="pb"><button class="pbtn" data-next>Ver el dato</button></div></div>
       <div class="pv" data-v="2"><p class="pk" id="gyou">Tu respuesta: 1 año</p><p class="big45"><span id="n45">0</span> %</p><p class="q" style="font-size:26px">de las personas con pérdida auditiva tarda <b style="color:#C5003E">dos años o más</b> en revisarse.</p><div class="dots20" id="dots20"></div><p class="src">EuroTrak España 2026</p><div class="pb"><button class="pbtn" data-next>¿Y tú? Mira las señales</button></div></div>
       <div class="pv sig" data-v="3"><p class="pk">Señal 1 de 7</p><p class="q">¿Pides a menudo que te repitan las cosas?</p><div class="bubbles"><span>¿Qué?</span><span>¿Cómo?</span><span>¿Perdona?</span></div><div class="opts" data-k="0"><button data-s="1">Sí, a menudo</button><button data-s=".5">A veces</button><button data-s="0">Casi nunca</button></div></div>
@@ -817,8 +818,9 @@ button{font:inherit;color:inherit}
 <section class="slide red" id="s-end" data-sec="Decidir" aria-label="Cierre">
   <img class="logo" src="assets/logo-blanco.png" alt="Fundación GAES Solidaria">
   <p class="ears" aria-hidden="true">3/3</p>
-  <h2 class="t-xl focus" style="font-size:156px">La pérdida auditiva<br>no espera.<br>Tú tampoco.</h2>
-  <p class="thanks rise" style="animation-delay:1.2s">Gracias.</p>
+  <h2 class="t-xl focus" style="bottom:330px">Sí que pasa.</h2>
+  <p class="endsub rise" style="animation-delay:.9s">La pérdida auditiva no espera.<br>Revisa tu audición.</p>
+  <p class="thanks rise" style="animation-delay:1.4s;bottom:84px">Gracias.</p>
 </section>
 
 </div></div>
